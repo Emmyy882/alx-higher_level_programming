@@ -6,6 +6,7 @@ def new_in_list(my_list, idx, element):
     """
 
     new_list = list.copy(my_list)
+
     if idx < 0:
         return new_list
     elif idx > (len(new_list) - 1):
