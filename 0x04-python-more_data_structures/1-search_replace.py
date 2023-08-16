@@ -8,8 +8,8 @@ def search_replace(my_list, search, replace):
 
     i = 0
     new_list = my_list[:]
-    
-    while i < (len(new_list) - 1):
+
+    while i < len(new_list):
         if new_list[i] == search:
             new_list[i] = replace
         
