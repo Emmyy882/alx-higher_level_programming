@@ -5,9 +5,3 @@
 class Square:
     """Represents a square"""
     pass
-
-
-if __name__ == "__main__":
-    square1 = Square()
-    print(type(square1))
-    print(square1.__dict__)
