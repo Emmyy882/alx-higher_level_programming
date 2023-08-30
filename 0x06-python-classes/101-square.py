@@ -1,14 +1,6 @@
 #!/usr/bin/python3
 """Python Module(Squares)
 """
-'''
-File_name: 101-square.py
-Created: 30th of May, 2023
-Auth: David James Taiye (Official0mega)
-Size: undefined
-Project: 0x06-python-classes
-Status: submitted.
-'''
 
 
 class Square:
