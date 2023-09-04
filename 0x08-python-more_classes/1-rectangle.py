@@ -3,7 +3,10 @@
 
 
 class Rectangle:
-    """Represents a Rectangle"""
+    """
+    'class Rectangle' is a blueprint for creating objects
+    it represents a rectangle
+    """
 
     def __init__(self, width=0, height=0):
         """
