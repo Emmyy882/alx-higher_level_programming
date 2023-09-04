@@ -4,11 +4,7 @@
 
 class Rectangle:
     """
-    'class Rectangle' is a blueprint for...
-    ...creating objects
-    it represents a rectangle
-    Instantiation with optional width and height:
-    ....def __init__(self, width=0, height=0):
+    Represent a rectangle
     """
 
     def __init__(self, width=0, height=0):
@@ -25,11 +21,11 @@ class Rectangle:
 
     @property
     def width(self):
+        """Get/Set the width of the rectangle"""
         return self.__width
 
     @propertysetter
     def width(self, value):
-        """Get/Set the width of Rectangle"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value < 0:
