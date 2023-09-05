@@ -77,7 +77,5 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """__del__() method is called when an instance of the 'Rectangle'...
-        class is Deleted. Then it prints thee Message 'Bye Rectangle'
-        """
-        print("Bye Rectangle")
+        """prints a message for every deletion of a Rectangle"""
+        print("Bye Rectangle...")
