@@ -21,11 +21,14 @@ class Rectangle:
 
     @property
     def width(self):
+        """defining a getter method for the private attribute...
+        width for the rectangle."""
         return self.__width
 
     @property
     def height(self):
-        """Get/Set height of Rectangle"""
+        """defining a getter method for the private attribute...
+        ...height for the Rectangle."""
         return self.__height
     
 
