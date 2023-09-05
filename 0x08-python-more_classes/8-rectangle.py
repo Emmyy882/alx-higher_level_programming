@@ -51,13 +51,13 @@ class Rectangle:
 
     def area(self):
         """returns the rectangle area"""
-        return self.__width * self.__height
+        return self.width * self.height
 
     def perimeter(self):
         """returns the rectangle perimeter"""
-        if self.__width == 0 or self.__height == 0:
+        if self.width == 0 or self.height == 0:
             return 0
-        return 2 * (self.__height + self.__width)
+        return 2 * (self.height + self.width)
 
     def __str__(self):
         """ '__str__()' method overrides the default string representation...
@@ -80,4 +80,5 @@ class Rectangle:
 
     def __del__(self):
         """prints a message for every deletion of a Rectangle"""
+        print('Bye rectangle')
         Rectangle.number_of_instance -= 1
