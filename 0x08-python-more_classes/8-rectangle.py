@@ -60,7 +60,8 @@ class Rectangle:
         """returns the rectangle perimeter"""
         if self.width == 0 or self.height == 0:
             return 0
-        return 2 * (self.height + self.width)
+        else:
+            return 2 * (self.height + self.width)
 
     def __str__(self):
         """ '__str__()' method overrides the default string representation...
