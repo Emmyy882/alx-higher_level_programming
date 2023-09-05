@@ -17,10 +17,17 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
         return self.__width
+
+    @property
+    def height(self):
+        """Get/Set height of Rectangle"""
+        return self.__height
+    
 
     @width.setter
     def width(self, value):
@@ -32,10 +39,6 @@ class Rectangle:
         else:
             self.__width = value
 
-    @property
-    def height(self):
-        """Get/Set height of Rectangle"""
-        return self.__height
 
     @height.setter
     def height(self, value):
@@ -77,5 +80,4 @@ class Rectangle:
 
     def __del__(self):
         """prints a message for every deletion of a Rectangle"""
-        
-
+        Rectangle.number_of_instance -= 1
