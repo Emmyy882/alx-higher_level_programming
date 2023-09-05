@@ -76,7 +76,7 @@ class Rectangle:
         """This method returns a string representation of the object that can
         be used to recreate a new instance of the 'Rectangle' class
         """
-        return "Rectangle({}, {})".format(self.__width, self.__height)
+        return 'Rectangle({:d}, {:d})'.format(self.__width, self.__height)
 
     def __del__(self):
         """prints a message for every deletion of a Rectangle"""
