@@ -7,7 +7,7 @@ def save_to_json_file(my_obj, filename):
     """
     a function that writes an object to a text file, using JSON...
     .....representation.
-    # my_obj contains the text that should be written. while
+    # my_obj is the object that should be written. while
     # filename is the name of the file to contain the written text.
     # you must use the width statement.
     """
