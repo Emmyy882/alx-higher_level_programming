@@ -12,6 +12,6 @@ def save_to_json_file(my_obj, filename):
     # you must use the width statement.
     """
 
-    with open(filename, mode='w', encoding="utf-8") as file:
+    with open(filename, mode='w') as file:
         """open function open the file 'filename' and writes to it"""
-        file = write(json.dump(my_obj, filename))
+        json.dump(my_obj, filename)
