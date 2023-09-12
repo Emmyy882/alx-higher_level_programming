@@ -23,7 +23,13 @@ class Rectangle(BaseGeometry):
     ..validator' method from the 'BaseGeometry' class is called to validate
     ..the width and height, ensuring they are positive integers"""
     def __init__(self, width, height):
-        """Constructor initializing Rectangle attribute"""
+        """
+        initializes rectangle
+
+        Args:
+            __width = width
+            __height = height
+        """
         self.__width = width
         self.__height = height
         self.integer_validator("width", width)
