@@ -9,15 +9,6 @@ from random import randint
 from json import JSONDecoder, JSONEncoder
 from turtle import Pen
 
-'''
-File_Name: base.py
-Created Date: 17th of June, 2023
-Authur: David James Taiye (Official0mega)
-Size: Undefined
-Project Title: 0x0C-python-almost_a_circle
-Status: Submitted.
-'''
-
 
 class Base:
     """The 'Base' class serves as the base class for all polygon objects...
