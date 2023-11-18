@@ -26,4 +26,7 @@ if __name__ == '__main__':
 
         # Printing the first object
         result = session.query(State).first()
-        print('{}: {}'.format(result.id, result.name))
+        if result is not None:
+            print('{}: {}'.format(result.id, result.name))
+        else:
+            print("Nothing")
