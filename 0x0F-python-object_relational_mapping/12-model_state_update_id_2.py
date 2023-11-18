@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""prints the State object with the name passed as argument from the \
-        database hbtn_0e_0_usa
-"""
+"""changes the name of a State objects from the database hbtn_0e_0_usa"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -26,10 +24,8 @@ if __name__ == '__main__':
         Session = sessionmaker(bind=engine)
         session = Session()
 
-        state_name = sys.argv[4]
-        # Printing the first object
-        result = session.query(State).filter(State.name == state_name).first()
-        if result:
-            print('{}'.format(result.id))
-        else:
-            print("Not found")
+        # Updating the name of State object
+        state_to_update = session.query(State).filter_by(id=2).first()
+        if state_to_update:
+            state_to_update.name = 'New Mexico'
+            session.commit()
