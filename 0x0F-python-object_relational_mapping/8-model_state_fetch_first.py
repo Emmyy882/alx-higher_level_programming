@@ -23,7 +23,7 @@ if __name__ == '__main__':
         # creating a session to interact with the database
         Session = sessionmaker(bind=engine)
         session = Session()
-        
+
         # Printing the first object
         result = session.query(State).first()
         print('{}: {}'.format(result.id, result.name))
