@@ -8,7 +8,7 @@ import MySQLdb
 
 
 if __name__ == '__main__':
-    if len(sys.argv) >= 4:
+    if len(sys.argv) >= 5:
         # Connecting to MySQL Database
         db_conn = MySQLdb.connect(
                 host='localhost',
@@ -17,8 +17,8 @@ if __name__ == '__main__':
                 passwd=sys.argv[2],
                 db=sys.argv[3]
                 )
-        cursor = db_conn.cursor()
         state_name = sys.argv[4]
+        cursor = db_conn.cursor()
 
         # Executing the SQL query
         cursor.execute(
@@ -33,6 +33,5 @@ if __name__ == '__main__':
         results = cursor.fetchall()
 
         # Displaying the result
-        for result in results:
-            print(result)
+        print(', '.join(map(lambda x: x[0], results)))
         db_conn.close()
