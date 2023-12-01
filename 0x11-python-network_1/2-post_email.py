@@ -11,7 +11,7 @@ if __name__ == '__main__':
     # encode the data dictionary into a URL-encoded string
     data = urllib.parse.urlencode(value).encode('ascii')
     req = urllib.request.Request(url, data)
-    
+
     with urllib.request.urlopen(req) as response:
         body = response.read().decode('utf-8')
         print("{}".format(body))
