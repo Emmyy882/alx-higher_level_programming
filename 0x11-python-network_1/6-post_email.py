@@ -10,7 +10,7 @@ import sys
 
 if __name__ == "__main__":
     url = sys.argv[1]
-    value = {"email": argv[2]}
+    value = {"email": asys.rgv[2]}
     req = requests.post(url, data=value)
 
     print(req.text)
